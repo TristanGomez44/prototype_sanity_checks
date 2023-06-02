@@ -309,7 +309,7 @@ def update_prototypes_on_batch(search_batch_input,
 def get_prototype_infos(
         ppnet_parallel: torch.nn.DataParallel,
         dataloader: torch.utils.data.DataLoader,
-) -> list[dict]:
+):
     """ Given a ProtoPNet and a push dataset, return a list of prototypes infos. """
     ppnet_parallel.eval()
     n_prototypes = ppnet_parallel.module.num_prototypes
