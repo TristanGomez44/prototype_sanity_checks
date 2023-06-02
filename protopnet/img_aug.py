@@ -1,11 +1,14 @@
 import Augmentor
 import os
+import glob
 
-dir = 'data/CUB_200_2011/dataset/train_crop/'
-target_dir = '../../train_crop_augmented/'
-os.makedirs('data/CUB_200_2011/dataset/train_crop_augmented', exist_ok=True)
-folders = [os.path.join(dir, folder) for folder in next(os.walk(dir))[1]]
-target_folders = [os.path.join(target_dir, folder) for folder in next(os.walk(dir))[1]]
+dir = '../data/blasto/dataset_icm/train_cropped/'
+target_dir = '../../train_cropped_augmented/'
+os.makedirs('../data/blasto/dataset_icm/train_cropped_augmented', exist_ok=True)
+folders = glob.glob(dir + '/*')
+target_folders = [folder.replace("train_cropped","train_cropped_augmented") for folder in glob.glob(dir + '/*')]
+
+print(folders, target_folders)
 
 for i in range(len(folders)):
     fd = folders[i]

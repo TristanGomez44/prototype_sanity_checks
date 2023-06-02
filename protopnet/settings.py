@@ -7,7 +7,7 @@ add_on_layers_type = 'regular'
 
 experiment_run = '003'
 
-data_path = '../data/CUB_200_2011/dataset/'
+data_path = '../data/blasto/dataset_icm/'
 train_dir = data_path + 'train_crop_augmented/'
 test_dir = data_path + 'test_crop/'
 train_push_dir = data_path + 'train_crop/'
