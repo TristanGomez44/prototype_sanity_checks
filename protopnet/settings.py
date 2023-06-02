@@ -1,4 +1,4 @@
-base_architecture = 'vgg19'
+base_architecture = 'resnet50'
 img_size = 224
 prototype_shape = (2000, 128, 1, 1)
 num_classes = 200
@@ -8,9 +8,9 @@ add_on_layers_type = 'regular'
 experiment_run = '003'
 
 data_path = '../data/blasto/dataset_icm/'
-train_dir = data_path + 'train_crop_augmented/'
-test_dir = data_path + 'test_crop/'
-train_push_dir = data_path + 'train_crop/'
+train_dir = data_path + 'train_cropped_augmented/'
+test_dir = data_path + 'test_cropped/'
+train_push_dir = data_path + 'train_cropped/'
 train_batch_size = 10
 test_batch_size = 20
 train_push_batch_size = 75
