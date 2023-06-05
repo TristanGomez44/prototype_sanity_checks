@@ -5,7 +5,7 @@ num_classes = 200
 prototype_activation_function = 'log'
 add_on_layers_type = 'regular'
 
-experiment_run = '003'
+experiment_run = 'short_0.60'
 
 data_path = '../data/blasto/dataset_icm/'
 train_dir = data_path + 'train_cropped_augmented/'
@@ -32,7 +32,7 @@ coefs = {
     'l1': 1e-4,
 }
 
-num_train_epochs = 1000
+num_train_epochs = 60
 num_warm_epochs = 5
 
 push_start = 10
